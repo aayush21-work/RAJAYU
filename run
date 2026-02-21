@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+echo "Running...."
+echo The power spectrum is in the output directory
+
+make run
