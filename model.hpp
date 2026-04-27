@@ -5,7 +5,7 @@
 //                       = H^2 * phi'' + Hdot * phi'
 //            ddH/dt^2   = H^2 * H'' + Hdot * H'
 
-const double lambda2 = 0.05;
+const double lambda2 = 100;
 
 double V(double phi) { return 0.5 * phi * phi; }
 double dV(double phi) { return 1 * phi; }

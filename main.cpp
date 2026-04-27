@@ -45,7 +45,7 @@ double H_pp(double phi_p, double H, double H_p) {
 }
 
 int main() {
-  double phi = 5.0;
+  double phi = 15.0;
 
   //  slow-roll IC (same iteration as before) 
   double H = std::sqrt(V(phi) / 3.0);

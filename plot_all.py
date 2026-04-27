@@ -153,7 +153,7 @@ def make_figure(N: np.ndarray, y: np.ndarray, cfg: dict, outdir: Path) -> None:
     ax.set_xlabel(r"$N$ (e-folds)", fontsize=13)
     ax.set_ylabel(cfg["ylabel"], fontsize=13)
 
-    ax.set_xlim(N[0], N[-1] + 70)
+    ax.set_xlim(N[0], N[-1] + 20)
 
     ax.xaxis.set_minor_locator(ticker.AutoMinorLocator())
     if not use_log:

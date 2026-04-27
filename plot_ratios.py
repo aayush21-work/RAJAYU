@@ -46,6 +46,8 @@ eps  = file[:,4]
 H    = file[:,5]
 Hp   = file[:,6]
 
+lamb= 100
+
 phidot  = phip * H
 phiddot = H * Hp * phip + H**2 * phipp
 
@@ -54,8 +56,8 @@ phippp = np.zeros_like(phipp)
 phippp[1:-1] = (phipp[2:] - phipp[:-2]) / (2 * dN)
 phidddot = phippp[1:-1] * H[1:-1]
 
-ratio1 = (phiddot / phidot)**2
-ratio2 = phidddot / phidot[1:-1]
+ratio1 = (phiddot /( phidot))**2
+ratio2 = phidddot /( phidot[1:-1])
 
 fig, ax = plt.subplots(figsize=(5, 3.5))
 
